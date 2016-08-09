@@ -1,0 +1,95 @@
+body{background:#fff;}
+.email{text-decoration:none;color:#333}
+.email:hover{text-decoration: none}
+.con{list-style:none}
+.well{min-height:10px;padding:0 19px;margin-bottom:0}
+.t3{color:#fff;font-size:12px;text-align:center;}
+/*nav
+.navbar .nav>li>a:hover{color:#427e1c}*/
+.navbar .nav > li > a{padding: 14px 15px 10px;}
+.navbar .nav{position:absolute;right:0}
+.dropdown-menu>li>:hover{background:green;}
+.navbar{margin-bottom:0;}
+.nav a{font-size:16px;}
+
+/*about*/
+.about{background:#fff;}
+.span3 .about_img{padding-top: 120px;}
+.hero-unit .a_p{text-indent:2em;font-size:14px;}
+.row_about{padding:10px 0;}
+.hero-unit .p1{font-size:20px;text-align:center}
+.hero-unit .p2{color: #c0c0c0;font-size: 18px;text-align:center}
+
+/*service_index*/
+.s_block{display:none}
+.thumbnail p{text-align:center;}
+.thumbnails > li{margin-bottom: 51px;}
+.service{padding:20px 0;}
+
+.span3:hover .s_block{transition:all 0.3s linear;transform:translateY(-50px);display:block;background:#427e1c;}
+.span3:hover .thumbnail{background:#fff;transition:all 0.3s linear;transform:translateY(-50px)}
+
+.con_main{padding-bottom:0px}
+ .att{text-align:center;margin:10px 0;}
+.row-fluid .span4{margin:80px 0;}
+.contact{background:#fff}
+.thumbnails .qq{margin-right:30px;}
+.thumbnails .qq img{display:inline-block}
+
+/*serviceOfCopy*/
+.copy{margin:70px 0;}
+
+/*serviceOfBrand*/
+.brand_ser{margin:120px 0;}
+.span12{margin-top:50px;padding-bottom:50px;}
+.span12 li{list-style:none;position:relative}
+.span12 li .back{display:none;position:absolute;top:0;left:0}
+.span12 li:hover .back{display:block}
+
+.brand_ser{margin-top:50px;padding-bottom:50px;padding-left:50px;}
+.brand_ser li{list-style:none;position:relative}
+.brand_ser li .back{display:none;position:absolute;top:0;left:0}
+.brand_ser li:hover .back{display:block}
+
+/*serviceOfPatent*/
+.ser_p{margin-left:0;}
+
+/*ident*/
+.intro{background:#fff;}
+.intro p{font-size:14px;}
+.ident_img{margin-top:100px;}
+
+/*eg*/
+.eg{margin:120px 0;}
+.eg li{list-style:none}
+.eg li p{text-align:center;}
+.eg li img:hover{transition:all 1s linear;transform:rotateY(360deg)}
+
+
+/*gaikuang*/
+.row_gai{padding:0;}
+.fen li{list-style:none;margin:10px 0;}
+.fen li p{text-indent:2em}
+
+/*footer*/
+.row_footer{margin-top:100px;background:#666}
+.connact{margin-top:40px}
+
+/*banner_text*/
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    left: 0;
+    padding: 15px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0);
+}
+.carousel-caption .tit{
+	text-align:center;
+	color:#fff
+}
+
+/*onlint_talk*/
+.onlint_talk{position:fixed;right:20px;top:60%;}
