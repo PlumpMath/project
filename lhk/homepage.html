@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>联航科丨智慧城市推动者</title>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<style>
+	*{margin:0;padding:0}
+	a{text-decoration:none;color:#333;}
+	ol,ul{list-style:none}
+	body{font-family:"Microsoft YaHei"}
+	nav{width:100%;height:95px;background:#6ebb2a;min-width:1000px;}
+	nav ul{width:1000px;margin:0 auto;height:95px}
+	nav ul li{line-height:95px;float:left}
+	nav ul li img{margin-top:25px;}
+	nav ul li a{display:block;color:#fff;margin:0 5px;width:80px;text-align:center;}
+	section{width:100%;min-width:1000px;height:600px;overflow:hidden;}
+	section img{width:100%;min-width:1000px;height:600px;}
+	section li{position:relative;height:600px}
+	section li article{width:600px;height:200px;min-width:600px;
+	background:rgba(1,1,1,0.7);position:absolute;top:50%;margin-top:-100px;left:50%;margin-left:-300px}
+	section article p{color:#fff;font-size:16px;padding-left:20px;line-height:30px;padding-top:20px}
+	section article .process{display:block;height:3px;color:#fff;margin-top:50px;width:0px;background:#6ebb2a;transition:all 2s linear}
+	.main{width:100%;min-width:1000px;height:530px;background:#fff;padding-top:30px;padding-bottom:10px;}
+	.main .container{width:1000px;height:540px;margin:0 auto;}
+	.main .container .aside{width:330px;height:500px;margin:20px 1px;float:left;}
+	.main .container .aside li{width:325px;height:190px;background:yellow;margin-top:20px;position:relative}
+	.main .container .aside .six_func.white{background:rgba(255,255,255,0.5)}
+	.main .container .aside .six_func.gray{background:rgba(243,239,238,0.5)}
+	.main .container .aside .six_func .green{width:325px;height:190px;position:absolute;top:0;left:0;background:#c8dfba;opacity:0;}
+	.main .container .aside li img{position:absolute;right:40px;top:5px;}
+	.main .container .aside li:hover  img{transform:rotateY(180deg);-webkit-transform: rotateY(180deg);
+											-webkit-transform-origin: 70% 100% 0;
+											-webkit-transition: opacity 800ms cubic-bezier(0.55, 0.31, 0.15, 0.93) 0ms, -webkit-transform 800ms cubic-bezier(0.55, 0.31, 0.15, 0.93) 0ms;
+											transition: opacity 800ms cubic-bezier(0.55, 0.31, 0.15, 0.93) 0ms, transform 800ms cubic-bezier(0.55, 0.31, 0.15, 0.93) 0ms;}
+	.main .container .aside .six_func:hover .green{opacity:1;transition:all 1s linear;transform:ratete(-90deg);
+													transform-origin:100% 50% 0;
+													transition:opacity 800ms cubic-bezier(0.55,0.31,0.15,0.93) oms,transform 800ms cubic-bezier(0.55,0.31,0.15,0.93) 0ms;}
+	.main .container .aside li p{position:absolute;color:#333;font-size:22px;}
+	.main .container .aside li .p1{top:10px;left:0;}
+	.main .container .aside li .p2{top:50px;left:0;}
+	hgroup{width:100%;height:300px;min-width:1000px;background:url("img/hgroup1.png") no-repeat;background-size:cover;background-position:center center}
+	hgroup img{width:100%;height:300px;min-width:1000px}
+	article{width:100%;height:637px;min-width:1000px}
+	article header{width:200px;height:25px;text-align:center;margin:0 auto;margin-top:3px;margin-bottom:3px;font-size:18px;}
+	article .zh{padding-top:93px;}
+	article hr{width:40px;margin:0 auto;border:1px solid #6ebb2a}
+	article .content{width:1000px;height:344px;margin:0 auto;margin-top:68px;}
+	article .left{width:450px;height:344px;float:left;margin-right:50px;background:url("img/about.png") no-repeat;background-size:cover;background-position:center;}
+	article .right{width:500px;height:344px;float:left}
+	article .right p{text-indent:2em;line-height:30px;font-size:12px;padding: 10px 0;}
+	footer{width:100%;min-width:1000px;height:60px;background:#ebebeb;}
+	footer img{border:none;width:100%;height:100%}
+	.foot{width:100%;min-width:1000px;margin:0 auto;height:60px;background:#6ebb2a}
+	.foot .foot_container{width:1000px;height:60px;margin:0 auto}
+	.foot .foot_container p{text-align:center;font-size:12px;line-height:30px;}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li style="line-height:70px">
+				<img src="img/logo.png">
+			</li>
+			<li style="margin-right:80px;margin-left:10px;color:#1f5582;font-weight:bolder">
+				丨 智慧城市推动者
+			</li>
+			<li>
+				<a href="<%=basePath %>home/homepage">首页</a>
+			</li>
+			<li>
+				<a href="#">APP专区</a>
+			</li>
+			<li>
+				<a href="#">解决方案</a>
+			</li>
+			<li>
+				<a href="#">产品专区</a>
+			</li>
+			<li>
+				<a href="#">联系我们</a>
+			</li>
+			<li>
+				<a href="<%=basePath %>/login_toLogin">控制台</a>
+			</li>
+		</ul>
+	</nav>
+	<header>
+		<section id="section">
+			<ul>
+				<li>
+					<img src="img/banner1.jpg" style="min-width:980px">
+					<article>
+						<p>联航科充电桩</p>
+						<p>专业充电桩的技术服务商</p>
+						<span class="process"></span>
+					</article>
+				</li>
+				<li style="display:none">
+					<img src="img/banner2.jpg" style="min-width:980px">
+					<article>
+						<p>tes2</p>
+						<p>专业充电桩的技术服务商</p>
+						<span class="process"></span>
+					</article>
+				</li>
+			</ul>
+		</section>
+	<header>
+	<div class="main">
+		<div class=container>
+			<div class="aside">
+				<ul>
+					<li class="six_func white">
+						<div class="green"></div>
+						<p class="p1" style="left:10px;top:110px;">充电桩</p>
+						<p class="p2" style="left:10px;top:154px;">CHARGE PILE</p>
+						<img src="img/combine1.png" alt="充电桩" style="float:right;margin-right:20px;">
+					</li>
+					<li class="six_func gray">
+						<div class="green"></div>
+						<p class="p1" style="top:110px;left:10px">广告</p>
+						<p class="p2" style="top:154px;left:10px">ADVERTISING</p>
+						<img src="img/combine4.png" alt="广告" style="float:right;margin-right:15px;" />
+					</li>
+				</ul>
+			</div>
+			<div class="aside">
+				<ul>
+					<li class="six_func gray">
+						<div class="green"></div>
+						<p class="p1"style="top:110px;left:10px;">监控</p>
+						<p class="p2" style="top:160px;left:10px;">MONITOR</p>
+						<img src="img/combine2.png" alt="监控" style="float:left;margin-right: 60px;" />
+					</li>
+					<li class="six_func white">
+						<div class="green"></div>
+						<p class="p1" style="top:110px;left:10px">WIFI热点</p>
+						<p class="p2" style="top:154px;left:10px">WIFI HOTSPOT</p>
+						<img src="img/combine5.png" alt="wifi热点"style="float:right;margin-right:13px;margin-top:20px;">
+					</li>
+				</ul>
+			</div>
+			<div class="aside">
+				<ul>
+					<li class="six_func white">
+						<div class="green"></div>
+						<p class="p1" style="top:110px;left:50px">照明</p>
+						<p class="p2" style="top:154px;left:50px">LIGHTING</p>
+						<img src="img/combine3.png" alt="照明"style="float:left;margin-right:10px;">
+					</li>
+					<li class="six_func gray">
+						<div class="green"></div>
+						<p class="p1" style="top:110px;left:8px">环境监测</p>
+						<p class="p2" style="top:154px;left:8px;font-size:20px">ENVIRONMENTAL MONITORING</p>
+						<img src="img/combine6.png" alt="环境监测" style="float:left;margin-right:20px;">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hgroup>
+	</hgroup>
+	<article>
+		<header class="zh">关于我们</header>
+		<hr />
+		<header class="en">ABOUT US</header>
+		<div class="content">
+			<div class="left"></div>
+			<div class="right">
+				<p>  
+					广州联航科电气有限公司是一家专门做充电桩ODM生产配套的企业，并拥有两家下属企业：广州天嵌计算机科技有限公司、广州宝森金属制品有限公司。
+				</p>
+				<p>
+					广州天嵌计算机科技有限公司是一家专业设计、研发充电桩解决方案的企业。公司研发中心设在广州番禺，研发办公面积600多平米，拥有一支80多人的研发团队，可独立承接充电桩软硬件研究、开发及ODM方案定制。公司延续着“尽我所能 达您所想”的服务原则，致力于成为一流的充电桩ODM领导者！
+				</p>
+				<p>
+					广州宝森金属制品有限公司是一家专业设计、生产不锈钢制品的企业。生产厂房占地1W多平米，员工200多人，拥有数台进口数控冲床、数控激光机、数控等离子切割机、大中型数控折弯机、剪板机等各种先进数控机加工生产设备，可对充电桩产品外观结构进行设计及
+				</p>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="foot">
+			<div class="foot_container">
+				<p style="text-align:center">地址：广东省广州市番禺区大龙街新桥村新兴路2号 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：13660753822</p>
+				<p style="text-align:center">广州联航科电气机械有限公司</p>
+			</div>
+		</div>
+	</footer>
+	
+<script>
+	var s_height = $('#section ul li img').height();
+	window.onload = function(){
+		//var process = document.getElementById('process');
+		var  p = $(".process");
+		p.width(600);
+		//process.style.width='600px';
+		
+	}
+//	$(window).resize(function(){
+//		console.log($('#section ul li img').height());
+//		if($('#section ul li img').height()!=0){
+//			$('#section').height($('#section ul li img').height());
+//		}else if('#section ul li img').height()==0){
+//			$('#section').height(600);
+//		}
+//		
+//	})
+//	$(function(){
+//		$('#section').height(s_height);
+//	})
+	$(function(){
+		var index = 0;
+		setInterval(function(){
+		var  p = $(".process");
+
+		index++;
+		var length = $("#section").find("li").length;
+		if(index>=length){
+			index = 0;
+		}
+		p.width(0);
+		$("#section").find("li").eq(index).show().siblings().fadeOut();
+		p.width(600);
+	},2000);
+	})
+</script>
+</body>
+</html>
