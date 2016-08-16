@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--当前页面的三要素-->
+		<title>html模板</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--css,js-->
+		<style type="text/css">
+			*{margin:0;padding:0}
+			a{text-decoration:none;color:#333;}
+			img{border:none}
+			ol,ul{list-style:none}
+			body{font-family:"Microsoft YaHei"}
+			nav{width:100%;height:95px;background:#fff;min-width:980px}
+			nav ul{width:80%;margin:0 auto;height:95px}
+			nav ul li{width:9%;line-height:50px;float:left;margin:0 1px;margin-top:20px;}
+			nav ul li img{margin-top:25px}
+			nav ul li a{display:block;width:100%;text-align:center;}
+			section{position:relative;min-width:600px;overflow:hidden;}
+			section li{display:none}
+			section img{width:100%;}
+			section article{
+			width:600px;height:200px;
+			background:rgba(1,1,1,0.7);position:absolute;top:50%;margin-top:-100px;left:50%;margin-left:-300px}
+			section article p{color:#fff;font-size:16px;padding-left:20px;line-height:30px;padding-top:20px}
+			section article .process{display:block;height:3px;color:#fff;margin-top:50px;width:0px;background:#6ebb2a;transition:all 5s linear}
+			hgroup{width:80%;margin:0 auto}
+			hgroup li{float:left;width:300px;height:200px;background:gray;margin:10px 20px;}
+		</style>
+
+	</head>
+<body>
+<!--nav-->
+<nav>
+	<ul>
+		<li style="margin:0 1px;line-height:70px;width:123px">
+			<img src="img/logo.png">
+		</li>
+		<li style="margin:0 1px;margin-right:50px;line-height:95px;margin-left:10px;width:20%;color:#1f5582;font-weight:bolder">
+			丨 智慧城市推动者
+		</li>
+		<li style="border-bottom:5px solid #6ebb2a;">
+			<a style="color:#6ebb2a;"href="<%=basePath %>home/homepage">首页</a>
+		</li>
+		<li>
+			<a href="#">APP专区</a>
+		</li>
+		<li>
+			<a href="#">充电桩</a>
+		</li>
+		<li>
+			<a href="#">产品专区</a>
+		</li>
+		<li>
+			<a href="#">联系我们</a>
+		</li>
+		<li>
+			<a style="background:#6ebb2a;color:#fff;"href="<%=basePath %>/login_toLogin">控制台</a>
+		</li>
+	</ul>
+</nav>
+<!--banner-->
+<header>
+	<section id="section">
+		<ul>
+			<li style="display:block">
+				<img src="img/banner1.jpg" style="min-width:980px">
+				<article>
+					<p>联航科充电桩</p>
+					<p>专业充电桩的技术服务商</p>
+					<span class="process"></span>
+				</article>
+			</li>
+			<li>
+				<img src="img/banner2.jpg" style="min-width:980px">
+				<article>
+					<p>tes2</p>
+					<p>专业充电桩的技术服务商</p>
+					<span class="process"></span>
+				</article>
+			</li>
+		</ul>
+	</section>
+<header>
+<!--six section-->
+<hgroup>
+	<ul>
+		<li>
+			<img src="img/combine1.png">
+			<p></p>
+		</li>
+		<li>
+			<img src="img/combine2.png">
+		</li>
+		<li>
+			<img src="img/combine3.png">
+		</li>
+		<li>
+			<img src="img/combine4.png">
+		</li>
+		<li>
+			<img src="img/combine5.png">
+		</li>
+		<li>
+			<img src="img/combine6.png">
+		</li>
+	<ul>
+</hgroup>
+
+<script>
+	window.onload = function(){
+		//var process = document.getElementById('process');
+		var  p = $(".process");
+		p.width(600);
+		//process.style.width='600px';
+		
+	}
+	$(window).resize(function(){
+		$('#section').height($('#section ul li img').height());
+	})
+	$(function(){
+		$('#section').height($('#section ul li img').height());
+	})
+	$(function(){
+		var index = 0;
+		setInterval(function(){
+		var  p = $(".process");
+		p.width(0);
+		index++;
+		var length = $("#section").find("li").length;
+		if(index>=length){
+			index = 0;
+		}
+		$("#section").find("li").eq(index).fadeIn().siblings().fadeOut();
+		p.width(600);
+	},5000);
+	})
+</script>
+</body>
+</html>
