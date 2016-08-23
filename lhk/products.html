@@ -4,24 +4,30 @@
 		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<!--当前页面的三要素-->
-		<title>联航科丨智慧城市推动者</title>
+		<title>联航科丨充电桩ODM领导者</title>
 		<meta name="Keywords" content="关键词,关键词">
 		<meta name="description" content="">
 		<link rel="icon" href="../favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="base.css" type="text/css">
+		<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
 		<!--css,js-->
 		<style type="text/css">
-			*{margin:0;padding:0;}
-			a{text-decoration:none;color:#333;}
-			ol,ul{list-style:none}
-			body{font-family:"Microsoft YaHei"}
-			nav{width:100%;height:95px;background:#6ebb2a;min-width:1000px;}
-			nav ul{width:1000px;margin:0 auto;height:95px}
-			nav ul li{line-height:95px;float:left}
-			nav ul li img{margin-top:25px;}
-			nav ul li a{display:block;color:#fff;margin:0 5px;width:80px;text-align:center;}
-
+			header{width:100%;min-width:1000px;height:439px;background:url("img/pro.png") no-repeat;background-size:100% 100%}
+			@media screen and (max-width:1200px){header{background:url("img/pro_1.png") no-repeat;background-size:100% 100%}}
+			#pro_con{width:1000px;margin:0 auto;height:750px;overflow:hidden;margin-top:84px;margin-bottom:116px;position:relative}
+			aside{width:230px;height:358px;margin-bottom:5px;}
+			#pro_nav li{width:230px;height:50px;background:#e7eaea;border-bottom:1px solid #fff;color:#858585;line-height:50px;text-align:center;cursor:pointer}
+			#pro_nav span{float:right;margin-right:20px;}
+			#pro_nav .on{background:#fff;color:#6ebb2a;}
+			#contact{width:250px;height:387px;}
+			#contact p{width:220px;height:37px;background:#e7eaea;line-height:37px;font-size:12px;padding-left: 10px;}
+			#pro_con #pro_ul{width:740px;height:750px;position:absolute;top:0;right:0px;}
+			#Content p{width:200px;height:47px;background:#6ebb2a;color:#fff;line-height:47px;text-align:center;border-radius:20px 20px 0 0;}
+			#Content ul{width:740px;height:750px;border-top:3px solid #6ebb2a;}
+			#Content ul li{width:205px;height:280px;float:left;margin:44px 20px;position:relative}
+			#Content ul li img{width:100%;height:100%}
+			#Content ul li .bottom{width:205px;height:50px;background:#a5acb5;position:absolute;bottom:0;color:#fff;text-align:center;}
 		</style>
 
 	</head>
@@ -34,7 +40,7 @@
 			<img src="img/logo.png">
 		</li>
 		<li style="margin-right:80px;margin-left:10px;color:#1f5582;font-weight:bolder">
-			丨 智慧城市推动者
+			丨 充电桩ODM领导者
 		</li>
 		<li>
 			<a href="homepage.html">首页</a>
@@ -43,7 +49,7 @@
 			<a href="app.html">APP专区</a>
 		</li>
 		<li>
-			<a href="products.html">产品专区</a>
+			<a class='current_a' href="products.html">产品专区</a>
 		</li>
 		<li>
 			<a href="charge_one.html">充电桩</a>
@@ -52,11 +58,230 @@
 			<a href="ContactUs.html">联系我们</a>
 		</li>
 		<li>
-			<a href="#">控制台</a>
+			<a id='kzt' href="#">控制台</a>
 		</li>
 	</ul>
 </nav>
-
+<!--header-->
+<header>
+</header>
+<!--content-->
+<div id='pro_con'>
+	<!--aside-->
+	<aside>
+		<p style='background:#6ebb2a;height:50px;width:230px;text-align:center;line-height:50px;color:#fff;border-radius:10px 10px 0 0;'>产品专区 丨 Products</p>
+		<ul id='pro_nav'>
+			<li class='on'>视频监控 <span>&gt;&gt;</span></li>
+			<li>路灯 <span>&gt;&gt;</span></li>
+			<li>环境采集器<span>&gt;&gt;</span></li>
+			<li>广告机<span>&gt;&gt;</span></li>
+			<li>无线WIFI<span>&gt;&gt;</span></li>
+			<li>技术支持<span>&gt;&gt;</span></li>
+		</ul>
+	</aside>
+	<!--Contact-->
+	<div id='contact'>
+		<p style='background:#6ebb2a;color:#fff;text-align:center;font-size:16px;height:50px;line-height:50px'>联系方式 丨 Contact</p>
+		<p>公司名称：广州天嵌计算机科技有限公司</p>
+		<p>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：020-38373101</p>
+		<p>业务电话：020-31143526</p>
+		<p>业务电话：020-38219416</p>
+		<p>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：020-38373101-816</p>
+		<p>电子邮箱：sales@embedsky.net</p>
+		<p>电子邮箱：market@embedsky.net</p>
+		<p>技术支持：020-38373101-807/815</p>
+		<p>售后服务：020-38373101-807/814</p>
+	</div>
+	<!--content-->
+	<ul id='pro_ul'>
+		<li class="pro_li">
+			<div id="Content">
+				<p>视频监控</p>
+				<ul>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="pro_li">
+			<div id="Content">
+				<p>路灯</p>
+				<ul>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="pro_li">
+			<div id="Content">
+				<p>环境采集器</p>
+				<ul>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="pro_li">
+			<div id="Content">
+				<p>广告机</p>
+				<ul>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="pro_li">
+			<div id="Content">
+				<p>无线WIFI</p>
+				<ul>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="pro_li">
+			<div id="Content">
+				<p>技术支持</p>
+				<ul>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro1.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+					<li>
+						<img src='img/pro2.png'>
+						<div class="bottom">采集器采集器采集器采集器采集器采集器采集器采集器</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
 <footer>
 	<div id="info">
 		<p>总部地址：广州市番禺区大石街植村一路48号悦凯中心D502</p>
@@ -67,5 +292,14 @@
 		<p>&copy; Reserve粤ICP备 11094220号</p>
 	</div>
 </footer>
+<script>
+	$(function(){
+		$('#pro_nav').find('li').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			var _index = $(this).index();
+			$('#pro_ul').find('.pro_li').eq(_index).slideDown().siblings().slideUp();
+		})
+	})
+</script>
 </body>
 </html>
