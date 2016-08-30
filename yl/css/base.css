@@ -1,0 +1,40 @@
+/*base*/
+*{margin:0;padding:0;}
+a{text-decoration:none;color:#333;}
+ul,ol{list-style:none;}
+body{font-family:"Microsoft YaHei";font-size:12px;color:#333;word-wrap:break-word;}
+/*head*/
+#welcome{width:1000px;height:38px;margin:0 auto;}
+#welcome p{line-height:38px;}
+.container{width:100%;height:105px;border-top:1px solid #aaa;min-width:1000px;}
+#tit{width:1000px;height:105px;margin:0 auto;}
+#tit .logo{width:450px;height:105px;margin:0 20px;}
+#tit .left{float:left}
+#tit .right{float:right}
+#tit .tit_img{float:left;margin-top:25px;}
+#tit .tit_text{float:left;margin-top:25px;margin-left:30px;}
+.p_big,.p_tel{color:#459219;font-size:24px;font-weight:bold;}
+.p_small{color:#a6a6a6;font-size:12px;}
+.p_tel{font-size:14px;}
+/*nav*/
+nav{width:100%;height:45px;background-color:#f7fcfa;min-width:1000px;}
+.nav_con{height:45px;width:1000px;margin:0 auto;border-right:1px solid #aaa;}
+.nav_con li{float:left;}
+.nav_con a{width:120px;text-align:center;line-height:45px;border-left:1px solid #aaa;height:45px;font-size:16px;display:block;}
+.nav_con .current{color:#459219;}
+/*banner*/
+header{width:100%;height:450px;min-width:1000px;background:url("../images/banner_02.png") no-repeat;background-size:100% 100%;}
+@media screen and (max-width:1200px){header{background:url("../images/banner_01.png") no-repeat;}}
+/*index_service*/
+.business{width:100%;min-width:1000px;height:1622px;background:url("../images/bg_02.png") no-repeat;}
+.business .ser{width:1000px;height:600px;margin:0 auto;background:pink;padding-top:10px;}
+.business .advantage{margin-top:200px}
+hgroup{margin:100px 0;}
+hgroup p{text-align:center;font-size:20px;}
+hgroup span{color:#459219;}
+.scope .type{width:205px;height:294px;background:#fff;float:left;margin:0 22.5px;}
+.scope .type img{width:100%;margin-bottom:30px;}
+.type li{width:100px;height:40px;float:left;text-align:center;font-size:14px;}
+.type{position:relative}
+.type p{position:absolute;width:205px;height:30px;top:50px;left:60px;font-size:20px;font-weight:bolder;color:#23480e;}
+.advantage li{width:100px;height:100px;background:#459219;margin:0 20px;border-radius:50px;}
