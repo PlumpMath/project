@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海地科技</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<!--nav-->
+<nav>
+    <span class="left"><i class="fa fa-home"></i>/<a href="#">联系菜单</a></span>
+    <span class="right"><a class="last" href="#">搜寻腕表</a></span>
+    <span class="right"><a href="#">搜索 <i class="fa fa-search"></i></a></span>
+    <span class="right"><a href="#">图标</a> </span>
+    <span class="right"><a href="#">SC </a></span>
+    <span class="right"><a href="#">中国</a></span>
+</nav>
+<!--header-->
+<header>
+    <!--logo-->
+    <div class="head left">
+        <img src="images/logo.png" alt="logo"/>
+    </div>
+    <!--search-->
+    <div class="container">
+        <div class="center">
+            <input type="text" id="search" placeholder="请输入您要查找的订单号"/><button><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <!--shopping cart-->
+    <div class="head right"><i class="fa fa-shopping-cart"></i><a href="#">购物车 &gt;</a></div>
+</header>
+<!--section-->
+<section>
+    <div class="sec right">
+        <p class="tit">客户服务</p>
+        <!--user list-->
+        <div id="user">
+            <ul id="user_type">
+                <li><a href="#"><img src="images/head.png" alt="头像"/></a></li>
+                <li><a class="current" href="#"><i class="fa fa-car"></i>返修退换货</a></li>
+                <li><a href="#"><i class="fa fa-file-text-o"></i>意见建议</a></li>
+                <li><a href="#"><i class="fa fa-list-alt"></i>购买咨询</a></li>
+                <li><a href="#"><i class="fa fa-ticket"></i>我的发票</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>个人中心</a></li>
+            </ul>
+        </div>
+        <!--services content-->
+        <div id="service">
+            <div id="method">
+                <li class="icon">
+                    <a href="#"><img src="images/1.png" alt=""/></a>
+                    <p class="method_p">体验产品定制</p>
+                </li>
+                <li class="icon">
+                    <a href="#"><img src="images/2.png" alt=""/></a>
+                    <p class="method_p">随便看款式</p>
+                </li>
+                <li class="icon">
+                    <a href="#"><img src="images/3.png" alt=""/></a>
+                    <p class="method_p">有活动联系我</p>
+                </li>
+            </div>
+            <div class="saleService">
+                <ul>
+                    <li class="sale_tit">售前服务</li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                </ul>
+            </div>
+            <div class="saleService">
+                <ul>
+                    <li class="sale_tit">售后服务</li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                    <li><a href="#"><img src="images/ser1.png" alt="saleService"/>选购知识</a></li>
+                </ul>
+            </div>
+            <div id="message">
+                <div id="message_tit">
+                    <ul class="select">
+                        <li class="active"><a href="javascript:;">留言板</a></li>
+                        <li><a href="javascript:;">在线客服</a></li>
+                        <li><a href="javascript:;">电话客服</a></li>
+                    </ul>
+                </div>
+                <div id="message_box">
+                    <form action="post">
+                        <span>业务种类:</span>
+                        <select name="select" id="Type">
+                            <option value="售后">买卖商品</option>
+                            <option value="售后">买卖商品</option>
+                            <option value="售后">买卖商品</option>
+                        </select>
+                        <br/>
+                        <hr/>
+                        <span>留言类别:</span>
+                        <input type="radio" value="资讯" name="messageType"/>资讯
+                        <input type="radio" value="建议" name="messageType"/>建议
+                        <input type="radio" value="投诉" name="messageType"/>投诉
+                        <input type="radio" value="表扬" name="messageType"/>表扬
+                        <br/>
+                        <hr/>
+                        <span>所在地区:</span>
+
+                        <select name="select">
+                            <option value="province">四川省</option>
+                            <option value="province">四川省</option>
+                            <option value="province">四川省</option>
+                        </select>
+                        <select name="select">
+                            <option value="part">成都</option>
+                            <option value="part">成都</option>
+                            <option value="part">成都</option>
+                        </select>
+                        <input type="radio"/>其他
+                        <input type="text"/>
+                        <br/>
+                        <hr/>
+                        您的留言:
+                        <textarea name="" id="" cols="85" rows="10">
+
+                        </textarea>
+                        <br/>
+                        <button id="message_btn">浏览留言板</button>
+                        <br/>
+                        <hr/>
+                        <input type="radio" class="feedback" name="feedback"/>邮件回复
+                        <input type="radio" class="feedback" name="feedback"/>电话回复
+                        <input type="radio" class="feedback" name="feedback"/>无需回复
+                        <br/>
+                        <hr/>
+                        <label for="">您的姓名：</label><input type="text"/><br/><br/>
+                        <label for="">您的Email地址：</label><input type="text"/><br/><br/>
+                        <label for="">校验码：</label><input type="text"/><br/><br/>
+                        <hr/>
+                        <p>温馨提示：您的问题将有客服工作人员在 <b>三个工作日</b>内回复，如有紧急情况，请向<a href="#">在线客服</a>提问</p>
+                        <hr/>
+                        <button>提交留言</button>
+                        <button>取消</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<div id="foot">
+    <footer>
+        <div class="tel">
+            <p class="left_p">致电专属顾问</p><br/>
+            <p class="left_p">18980084840</p>
+            <p class="right right_p">接受致电</p>
+        </div>
+
+        <dl>
+            <dt>保持联系</dt>
+            <dd>订阅实时通讯</dd>
+            <dd>成为My JAEGER—LECOULIRE</dd>
+        </dl>
+        <dl>
+            <dt>专卖店</dt>
+            <dd>寻找专卖店</dd>
+            <dd>预约专卖店</dd>
+        </dl>
+        <dl>
+            <dt>更多信息</dt>
+            <dd>索取目录</dd>
+            <dd>提出申请</dd>
+            <dd>我们的应用软件</dd>
+        </dl>
+        <hr/>
+        <ul>
+            <li>&copy; 海地云</li>
+            <li>2016</li>
+            <li>沪ICP备14014303号</li>
+            <li>媒体中心</li>
+            <li>关注我们</li>
+            <li>使用条款</li>
+            <li>事业</li>
+        </ul>
+    </footer>
+</div>
+<!--aside-->
+<aside>
+    <ul>
+        <li><a href=""><i class="fa fa-user"></i></a></li>
+        <li><a href=""><i class="fa fa-share"></i></a></li>
+        <li><a href=""><i class="fa fa-search"></i></a></li>
+    </ul>
+</aside>
+</body>
+</html>
